@@ -1,0 +1,118 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(".//Images/stuff/bg7.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.wishlist-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Blur effect for a glassy appearance */
+    text-align: center;
+}
+
+/* Title Styling */
+.wishlist-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Table Styles */
+.wishlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.wishlist-table th, .wishlist-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.wishlist-table th {
+    background-color: #f7f7f7;
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.wishlist-table td {
+    font-size: 15px;
+    color: #444;
+}
+
+/* Button Styles */
+.remove-btn {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.remove-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wishlist-table thead {
+        display: none;
+    }
+    
+    .wishlist-table, .wishlist-table tbody, .wishlist-table tr, .wishlist-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .wishlist-table tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .wishlist-table td {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+    }
+
+    .wishlist-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .wishlist-table td:last-child {
+        text-align: center;
+    }
+}
+
+/* Empty Wishlist Message */
+.wishlist-container p {
+    font-size: 18px;
+    color: #666;
+    padding: 20px;
+}

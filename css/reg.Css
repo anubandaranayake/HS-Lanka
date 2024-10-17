@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: #e0dede;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./Images/stuff/order.webp'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6; /* Adjust for visibility */
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2; /* Ensure form is above the background */
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+.myform {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 30%;
+    padding: 10px;
+    background-color: #68696a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #A7A3A3;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.aleart {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-status-message-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}

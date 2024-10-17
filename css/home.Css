@@ -1,0 +1,304 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e5a612;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo img {
+    width: 150px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #007BFF;
+}
+
+.navbar-icons a {
+    margin-left: 15px;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navbar-icons a:hover {
+    color: #007BFF;
+}
+
+/* Top Icons (Search, Cart, Wishlist) */
+.top-icons {
+    display: flex;
+    justify-content: right;
+    margin: 20px 0;
+}
+
+.top-icons a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.top-icons a:hover {
+    color: #007BFF;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    background-image: url('./Images/stuff/rg1.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: #795705;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/*delivey row*/
+.deliver_info{
+    width: 94%;
+    height: auto;
+    margin-top: 5vh;
+    margin-left: 3%;
+    background-color: rgb(191, 190, 189);
+    border-radius: 15px;
+    display: flex;
+}
+.deliver_phone{
+    width: 100%;
+    height: auto;
+    padding: 8vh;
+    color: black;
+    border-radius: 15px;
+}
+.deliver_img{
+    width: 85%;
+    height: auto;
+    padding: 5vh;
+    border-radius: 15px;
+}
+.deliver_txt{
+    width: 90%;
+    height: auto;
+    padding: 5vh;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.deliver_phone_01{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: bolder;
+    padding: 0;
+}
+.deliver_phone_01:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+.deliver_txt_01{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+.deliver_img_01{    
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer-top{
+    margin-left: 0%;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 75%;
+    font-size: 1em;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-paragraph {
+    flex: 2;
+    font-size: 2em;
+    margin: 10px 20px;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.footer-icons a:hover {
+    color: #007BFF;
+   
+}
+
+.footer-middle ul {
+   
+    margin-left: 35%;
+    font-size: 2em;
+    margin-top: -20%;
+    
+}
+
+.footer-middle ul li {
+   
+    width: 100%;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 1em;
+}
+
+.footer-middle ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-middle ul li a:hover {
+    color: #007BFF;
+    
+}
+
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .top-icons {
+        flex-direction: column;
+    }
+    .top-icons a {
+        margin: 10px 0;
+    }
+    .footer-top,
+    .footer-middle,
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-middle ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* General Styles for Offers Section */
+.Offers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+    grid-gap: 20px; /* Space between the boxes */
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the grid */
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for Individual Offer Boxes */
+.Offers img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.Offers img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .Offers {
+        grid-template-columns: 1fr; /* On small screens, only one image per row */
+    }
+}

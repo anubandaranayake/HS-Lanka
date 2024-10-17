@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e5a612;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo img {
+    width: 150px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #007BFF;
+}
+
+.navbar-icons a {
+    margin-left: 15px;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navbar-icons a:hover {
+    color: #007BFF;
+}
+
+/* Top Icons (Search, Cart, Wishlist) */
+.top-icons {
+    display: flex;
+    justify-content: right;
+    margin: 20px 0;
+}
+
+.top-icons a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.top-icons a:hover {
+    color: #007BFF;
+}
